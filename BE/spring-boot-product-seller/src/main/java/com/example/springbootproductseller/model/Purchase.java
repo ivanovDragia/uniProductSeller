@@ -2,7 +2,7 @@ package com.example.springbootproductseller.model;
 
 import lombok.Data;
 
-import jakarta.persistence.*;
+import javax.persistence.*;
 import java.time.LocalDateTime;
 
 @Data
