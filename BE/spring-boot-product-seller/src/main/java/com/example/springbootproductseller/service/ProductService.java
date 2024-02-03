@@ -10,5 +10,5 @@ public interface ProductService
 
     void deleteProduct(Long id);
 
-    List<Product> findAllProducts();
+    List<Product> findAllProducts(String name,String description);
 }

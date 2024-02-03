@@ -29,8 +29,10 @@ public class ProductController
     }
 
     @GetMapping //api/product
-    public ResponseEntity<?> getAllProducts()
+    public ResponseEntity<?> getAllProducts(@RequestParam(value = "name",required = false) String name,@RequestParam(value = "description",required = false) String description)
     {
-        return new ResponseEntity<>(productService.findAllProducts(), HttpStatus.OK);
+        System.out.println(name);
+        System.out.println(description);
+        return new ResponseEntity<>(productService.findAllProducts(name,description), HttpStatus.OK);
     }
 }

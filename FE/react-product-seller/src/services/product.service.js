@@ -13,8 +13,8 @@ class ProductService {
     return axios.delete(API_URL + "/" + product.id, { headers: authHeader() });
   }
 
-  getAllProducts() {
-    return axios.get(API_URL);
+  getAllProducts(queryParamsObject) {
+    return axios.get(API_URL, { params: queryParamsObject });
   }
 }
 

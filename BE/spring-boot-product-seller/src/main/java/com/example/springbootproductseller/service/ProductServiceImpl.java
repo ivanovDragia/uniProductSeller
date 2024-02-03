@@ -32,8 +32,8 @@ public class ProductServiceImpl implements ProductService
     }
 
     @Override
-    public List<Product> findAllProducts()
+    public List<Product> findAllProducts(String name,String description)
     {
-        return productRepository.findAll();
+        return productRepository.findAll(name,description);
     }
 }

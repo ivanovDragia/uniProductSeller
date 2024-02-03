@@ -7,3 +7,23 @@
   font-size: 100px;
   color: darkslateblue;
 }
+
+.filter {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.filterButtons {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.filterFields {
+    display: flex;
+    height: 30px;
+    gap: 25px;
+}
