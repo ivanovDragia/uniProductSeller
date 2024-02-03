@@ -5,7 +5,7 @@ import AuthenticationService from "../../services/authentication.service";
 import "./register.page.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faUserCircle } from "@fortawesome/free-solid-svg-icons";
-import User from "../models/user"
+import User from "../../models/user"
 
 const RegisterPage = () => {
   const [user, setUser] = useState(new User("", "", ""));
