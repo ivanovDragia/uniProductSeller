@@ -55,7 +55,6 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter
         http.addFilterBefore(jwtAuthorizationFilter(), UsernamePasswordAuthenticationFilter.class);
     }
 
-    //Why don't we describe it as a component, because of scope.
     @Bean
     public JwtAuthorizationFilter jwtAuthorizationFilter()
     {
